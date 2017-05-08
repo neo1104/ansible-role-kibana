@@ -1,0 +1,14 @@
+---
+# defaults file for roles/kibana
+
+kibana_version: 5.3.2
+kibana_rpm_path: https://artifacts.elastic.co/downloads/kibana/kibana-{{ kibana_version }}-x86_64.rpm
+
+kibana_server_port: 5601
+kibana_server_host: 192.168.35.10
+kibana_server_name: kibana.payonce.cn
+kibana_index_name: kibana
+kibana_pid_path: /var/run/kibana.pid
+kibana_log_path: /var/log/kibana/kibana.log
+kibana_conf_path: /etc/kibana/kibana.yml
+elasticsearch_url: http://127.0.0.1:9200

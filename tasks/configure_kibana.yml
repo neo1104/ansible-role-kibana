@@ -1,0 +1,8 @@
+---
+- name: copy kibana configure file
+  template:
+    src: kibana.yml.j2
+    dest: "{{ kibana_conf_path }}"
+    owner: root
+    group: root
+    mode: 0644

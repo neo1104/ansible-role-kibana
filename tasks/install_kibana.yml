@@ -1,0 +1,6 @@
+---
+- name: download kibana rpm
+  yum:
+    name: "{{ kibana_rpm_path }}"
+    state: present
+    update_cache: no

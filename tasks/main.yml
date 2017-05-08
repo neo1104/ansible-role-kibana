@@ -1,0 +1,8 @@
+---
+# tasks file for roles/kibana
+- name: include install_kibana.yml
+  include: install_kibana.yml
+- name: include configure_kibana.yml
+  include: configure_kibana.yml
+  tags:
+    - configure
