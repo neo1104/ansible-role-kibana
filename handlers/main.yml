@@ -1,2 +1,6 @@
 ---
 # handlers file for roles/kibana
+- name: restart kibana service
+  service:
+    name: kibana
+    state: restarted

@@ -6,3 +6,5 @@
   include: configure_kibana.yml
   tags:
     - configure
+- name: include service_kibana.yml
+  include: service_kibana.yml
